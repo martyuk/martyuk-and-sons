@@ -1,0 +1,60 @@
+{{ partial "header.html" . }}
+
+{{if not .IsHome }}
+<h1>{{ .Title | markdownify }}</h1>
+{{ end }}
+
+{{ .Content }}
+
+<ul>
+  {{ $pages := .Pages }}
+  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+  {{ range .Pages.ByWeight.Reverse }}
+
+    {{ if ne .Params.More "no" }}
+      <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    {{ else }}
+      <h2>{{ .Title | markdownify }}</h2>
+    {{ end }}
+    
+    {{ if isset .Params "description" }}
+      <p> {{ .Description | markdownify }} </p>
+    {{ end }}
+
+    {{ if isset .Params "button_text" }}
+        <div><a target="_blank" rel="noreferrer" {{ with .Params.ref }}href="{{.}}"{{ end }} class="btn">{{ .Params.button_text }}</a></div>
+      </div>
+    {{ end }}
+
+    {{ if isset .Params "preview" }}
+      <img src="{{ .Params.Preview }}">
+    {{ end }}
+
+    {{ if isset .Params "youtube" }}
+      <div class="yt-video">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ .Params.Youtube }}" allowfullscreen ></iframe>
+      </div>
+    {{ end }}
+
+    {{ if isset .Params "kinescope" }}
+      <div class="kinescope" style="position: relative;  {{ with .Params.Padding }}padding-top: {{ . }}{{ else }}padding-top: 56.25%{{ end }}; width: 100%"><iframe src="https://kinescope.io/embed/{{ .Params.Kinescope }}" allow="autoplay; fullscreen; picture-in-picture; encrypted-media;" frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></iframe></div>
+    {{ end }}
+
+    {{ if isset .Params "video" }}
+      <div><video width=100% controls preload="metadata">
+        <source src="{{ .Params.Video }}#t={{ with .Params.VideoTime }}{{ . }}{{ else }}0.1{{ end }}" type="video/mp4">
+        тут должно было быть видео  
+      </video></div>
+    {{ end }}
+
+    {{ if ne .Params.More "no" }}
+      <p><a href="{{ .Permalink }}">{{ T "read-more" }}</a></p>
+    {{ end }}
+  <!-- <li>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+  </li> -->
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}

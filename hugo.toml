@@ -1,0 +1,47 @@
+baseURL = 'http://martyuk.group/'
+theme = 'no-style'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.ru]
+    contentDir = 'content/ru'
+    disabled = false
+    languageCode = 'ru-RU'
+    languageDirection = 'ltr'
+    languageName = 'Russian'
+    title = 'Мартюк и сыновья'
+    weight = 1
+    author = 'Петр Мартюк'
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Martyuk and Sons'
+    weight = 2
+    author = 'Petr Martyuk'
+  [languages.pt]
+    contentDir = 'content/pt'
+    disabled = false
+    languageCode = 'pt-BR'
+    languageDirection = 'ltr'
+    languageName = 'Portuguese'
+    title = 'Martyuk e Filhos'
+    weight = 3
+    author = 'Pedro Martyuk'
+  [languages.ja]
+    contentDir = 'content/ja'
+    disabled = false
+    languageCode = 'ja-JP'
+    languageDirection = 'ltr'
+    languageName = 'Japanese'
+    title = 'Martyuk and Sons'
+    weight = 4
+    author = 'Petr Martyuk'
+
+[imaging]
+  hint = 'photo'
+  quality = 75
+  resampleFilter = 'box'

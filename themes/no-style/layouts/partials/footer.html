@@ -1,0 +1,13 @@
+    <footer>
+      {{ partial "foot_custom.html" . }}
+      {{ with .Site.Params.footer }} {{ end }}
+      <div id="cities">
+        <div>© {{ T "avtor" }}</div>
+        <div>{{ T "moskva" }}</div>
+        <div>{{ T "london" }}</div>
+        <div>{{ T "tokio"}}</div>
+        <div>{{ T "rio" }}</div>
+      </div>
+    </footer>
+  </body>
+</html>
