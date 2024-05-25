@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Martyuk and Sons</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content on Martyuk and Sons</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en-US</language>
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/en/more/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/more/</guid>
+      <description>After we&amp;rsquo;re done with the strategy, we start on ideas. To kill two birds with one stone A great idea is already part strategy, and a great strategy is part idea. How one brain can contain both is a mystery and the special sauce of our consultancy. Petr Martyuk. An engineer-physicist by education and a creative director by profession. Petr is recognized as the second most creative person in Russia according to ACAR.</description>
+    </item>
+  </channel>
+</rss>

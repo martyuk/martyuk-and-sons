@@ -1,4 +1,4 @@
-# Giving Small Businesses Access to the Brains Behind the Biggest Brand Marketing
+# Giving Small Businesses Access to the Brains Behind the Marketing of the Biggest Brands
 
 ## The Martyuk&Sons creative consultancy builds big-time brands for small and medium businesses. Using our innovative bullshit-free methodology™, we've streamlined our process to make our services accessible even to hot dog stand owners. Without bullshit see for yourself what our work looks like:
 
