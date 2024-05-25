@@ -2,7 +2,10 @@
       {{ partial "foot_custom.html" . }}
       {{ with .Site.Params.footer }} {{ end }}
       <div id="cities">
-        <div>© {{ T "avtor" }}</div>
+        <div id="cities-copyright"><p>© {{ T "avtor" }}</p>
+          <div><a href="mailto:hello@martyuk.com" target="_blank">hello@martyuk.com</a></div>
+          <div><a href="https://t.me/martyukgroup" target="_blank">@martyukgroup</a></div>
+        </div>
         <div>{{ T "moskva" }}</div>
         <div>{{ T "london" }}</div>
         <div>{{ T "tokio"}}</div>

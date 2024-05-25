@@ -1,9 +1,10 @@
+{{ $rUrl := substr .Page.RelPermalink 4 }}
 {{ if eq .Language.LanguageName "Russian" }}
-  🇷🇺 / <a href="/en">🇬🇧</a> /  <a href="/ja">🇯🇵</a> / <a href="/pt">🇵🇹</a>
+  🇷🇺 / <a href="/en/{{ $rUrl }}">🇬🇧</a> /  <a href="/ja/{{ $rUrl }}">🇯🇵</a> / <a href="/pt/{{ $rUrl }}">🇵🇹</a>
 {{ else if  eq .Language.LanguageName "English" }}
-  <a href="/ru">🇷🇺</a> / 🇬🇧 /  <a href="/ja">🇯🇵</a> / <a href="/pt">🇵🇹</a>
+  <a href="/ru/{{ $rUrl }}">🇷🇺</a> / 🇬🇧 /  <a href="/ja/{{ $rUrl }}">🇯🇵</a> / <a href="/pt/{{ $rUrl }}">🇵🇹</a>
 {{ else if  eq .Language.LanguageName "Japanese" }}
-  <a href="/ru">🇷🇺</a> / <a href="/en">🇬🇧</a> /  🇯🇵 / <a href="/pt">🇵🇹</a>
+  <a href="/ru/{{ $rUrl }}">🇷🇺</a> / <a href="/en/{{ $rUrl }}">🇬🇧</a> /  🇯🇵 / <a href="/pt/{{ $rUrl }}">🇵🇹</a>
 {{ else if  eq .Language.LanguageName "Portuguese" }}
-  <a href="/ru">🇷🇺</a> / <a href="/en">🇬🇧</a> / <a href="/ja">🇯🇵</a> / 🇵🇹
+  <a href="/ru/{{ $rUrl }}">🇷🇺</a> / <a href="/en/{{ $rUrl }}">🇬🇧</a> / <a href="/ja/{{ $rUrl }}">🇯🇵</a> / 🇵🇹
 {{ end }}

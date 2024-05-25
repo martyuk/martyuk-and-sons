@@ -9,6 +9,6 @@
   </head>
   <body>
     <nav>
-      <div>{{T "nazvanie"}}</div>
+      <div><a href="{{ substr .Page.RelPermalink 0 4 }}"><strong>{{T "nazvanie"}}</strong></a></div>
       <div id="lang-switcher">{{ partial "language_switcher.html" . }}</div>
     </nav>
