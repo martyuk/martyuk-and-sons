@@ -18,4 +18,4 @@ We'll map out a detailed month-by-month roadmap to achieve your goals.
 
 [![](/../../img/megaboard-3.png)](https://miro.com/app/board/uXjVKRiyqsI=/?share_link_id=306221683197)
 
-[Learn more](more)
+[Learn more →](more)

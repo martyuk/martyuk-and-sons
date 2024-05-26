@@ -17,4 +17,4 @@ Vamos traçar um plano detalhado do que e quando fazer para atingir seus objetiv
 
 [![](/../../img/megaboard-3.png)](https://miro.com/app/board/uXjVKRiyqsI=/?share_link_id=306221683197)
 
-[Saiba mais](more)
+[Saiba mais →](more)

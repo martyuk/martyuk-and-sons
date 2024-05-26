@@ -17,4 +17,4 @@
 
 [![Шаблон коммуникационного плана](/../../img/megaboard-3.png)](https://miro.com/app/board/uXjVKRiyqsI=/?share_link_id=306221683197)
 
-[Подробнее](more)
+[Подробнее →](more)
